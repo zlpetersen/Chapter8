@@ -121,14 +121,14 @@ void fillCandyBar(CandyBar& bar, char* brand, double weight, int calories)
 void upperCaseCaller()
 {
     string input;
-    cout << "Enter a string: ";
+    cout << "Enter a string (q to quit): ";
     ignore();
     while (std::getline(cin, input))
     {
         if (input == "q" || input == "Q")
             break;
         upperCase(input);
-        cout << "Enter a string: ";
+        cout << "Enter a string (q to quit): ";
     }
 }
 
